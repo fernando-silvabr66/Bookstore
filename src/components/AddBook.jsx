@@ -8,7 +8,7 @@ const AddBook = () => {
 
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-  const [category, setCategory] = useState('');
+  const [category, setCategory] = useState('Action');
 
   const addBookToStore = (e) => {
     e.preventDefault();
