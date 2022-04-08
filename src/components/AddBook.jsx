@@ -19,7 +19,6 @@ const AddBook = () => {
       category,
     };
     dispatch(addBook(newBook));
-    // Clear Inputs
     setTitle('');
     setAuthor('');
   };
