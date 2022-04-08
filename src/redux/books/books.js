@@ -1,7 +1,23 @@
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
-const initialState = [];
+const initialState = [
+  {
+    category: 'Religion',
+    title: 'Absalom, Absalom!',
+    author: 'William Faulkner',
+  },
+  {
+    category: 'Romance',
+    title: 'The sun also rises',
+    author: 'Ernest Hemingway',
+  },
+  {
+    category: 'Fiction',
+    title: 'Brave new world',
+    author: 'Aldous Huxley',
+  },
+];
 
 export const addBook = (payload) => ({
   type: ADD_BOOK,
