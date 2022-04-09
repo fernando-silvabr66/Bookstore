@@ -1,0 +1,26 @@
+.categories-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #121212;
+}
+
+.chk-status {
+  min-width: 15%;
+  background-color: var(--primary-clr);
+  color: var(--white-clr);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
+.chk-status:hover {
+  background-color: var(--secondary-clr);
+}
