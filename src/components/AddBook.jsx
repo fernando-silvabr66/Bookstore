@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/books';
+import { addNewBook } from '../redux/books/books';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -13,17 +13,17 @@ const AddBook = () => {
   const addBookToStore = (e) => {
     e.preventDefault();
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title,
       author,
       category,
     };
-    dispatch(addBook(newBook));
+    dispatch(addNewBook(newBook));
     setTitle('');
     setAuthor('');
   };
   return (
-    <form onSubmit={addBookToStore}>
+    <form>
       <input
         type="text"
         placeholder="Book Title"
@@ -49,7 +49,7 @@ const AddBook = () => {
         <option value="science fiction">Science Fiction</option>
         <option value="economy">Economy</option>
       </select>
-      <button type="submit">Add Book</button>
+      <button type="submit" onClick={addBookToStore}>Add Book</button>
     </form>
   );
 };
