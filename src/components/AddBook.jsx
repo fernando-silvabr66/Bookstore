@@ -25,7 +25,8 @@ const AddBook = () => {
   };
   return (
     <section className="form-section">
-      <form>
+      <h2 className="form-title">Add New Book</h2>
+      <form onSubmit={addBookToStore}>
         <input
           type="text"
           placeholder="Book Title"
@@ -50,8 +51,10 @@ const AddBook = () => {
           <option value="action">Action</option>
           <option value="science fiction">Science Fiction</option>
           <option value="economy">Economy</option>
+          <option value="technology">Technology</option>
+          <option value="games">Games</option>
         </select>
-        <button type="submit" onClick={addBookToStore}>Add Book</button>
+        <button className="add-btn" type="submit">Add Book</button>
       </form>
     </section>
   );
