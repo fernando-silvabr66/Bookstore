@@ -15,7 +15,7 @@ function Categories() {
     <div className={styles['categories-section']}>
       <div className={styles.heading}>Categories</div>
       <div className={styles.status}>{status}</div>
-      <button className={styles['check-status']} type="button" onClick={checkStatusHandler}>Check Status</button>
+      <button className="chk-status" type="button" onClick={checkStatusHandler}>Check Status</button>
     </div>
   );
 }
