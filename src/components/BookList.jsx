@@ -13,17 +13,19 @@ const BookList = () => {
   }, []);
 
   return (
-    <ul>
-      {books.map((book) => (
-        <BookItem
-          key={book.item_id}
-          id={book.item_id}
-          title={book.title}
-          author={book.author}
-          category={book.category}
-        />
-      ))}
-    </ul>
+    <section>
+      <ul>
+        {books.map((book) => (
+          <BookItem
+            key={book.item_id}
+            id={book.item_id}
+            title={book.title}
+            author={book.author}
+            category={book.category}
+          />
+        ))}
+      </ul>
+    </section>
   );
 };
 
