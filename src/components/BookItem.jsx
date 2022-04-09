@@ -29,10 +29,8 @@ const BookItem = (props) => {
         <h3 className="title">{title}</h3>
         <h4 className="author">{author}</h4>
         <div className="option-buttons">
-          <button type="button">comments</button>
-          <button type="button" onClick={removeHandler}>
-            Remove
-          </button>
+          <button type="button">Comments</button>
+          <button type="button" onClick={removeHandler}>Remove</button>
           <button type="button">Edit</button>
         </div>
       </div>
